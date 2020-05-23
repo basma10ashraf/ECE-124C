@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+form {
+  float:left
+  }
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  overflow: hidden;
+  background-color: #DC143C ;
+  position:absolute;
+  width:100%
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+background-color:#FF1493}
+ body{
+ background-color:black;
+ 
+ color:white
+ }
+ h1.b{
+ text-align:center;color:pink}
+
+
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:  #DC143C ;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: pink;
+}
+
+
+
+
+
+  
+button{ width:100px;height:50px}
+ button:hover{color:blue}
+p{color:pink}
+
+ body{  background-image: url("basket.jpg");
+  background-repeat: no-repeat;
+
+
+ background-position: right top 200px;
+  margin-right: 600px;
+  background-attachment: scroll;}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  
+  clear: both;
+  display: table;
+}
+
+
+.pagination {
+
+  margin-left:50%;
+ margin-top: 0%; 
+
+  display: inline-block;
+color: white;
+}
+
+.pagination a {
+  
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+color: white;
+}
+
+.pagination a.active {
+  background-color: #DC143C  ;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color:pink ;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+ 
+</style>
+<body> 
+<h1 class="b"> sports<h1>
+
+<ul>
+
+<li><a  href="    form.html    "        target="blank" >Home</a></li>
+
+
+<li><a  href="     contact.html     "        target="blank" >contact</a></li>
+
+<li><a  href="     about.html     "        target="blank" >about</a></li>
+
+
+
+<li><a  href="    news.html     "        target="blank" >news</a></li>
+ 
+  <li><a  href="    football.html     "        target="blank" >football</a></li>
+  <li><a href="             basket.html"            target="blank"  >basketball</a></li>
+  <li><a href="     tennis.html       "                   target="blank"   >tennis</a></li>
+  <li><a href="         swimming.html"              target="blank"   >swimming</a></li>
+    <li><a href="    squash.html    "                target="blank" >squash</a></li>
+</ul>
+
+<br><br><br>
+ <p>  Basketball is a team sport where two teams, usually consisting of players on each team, play against each other on a rectangular court. The objective is to get the ball through a hoop mounted high on a backboard on the opponent's side of the court, while preventing the opponent from shooting it into your team's hoop. It is a very popular sport worldwide, played with a round and usually orange-brown ball that bounces. Basketball players mainly use skills such as dribbling, shooting, running, and jumping. Each made basket is worth two points, while a basket made from beyond the three-point line is worth three points. If a player gets into too much physical contact, they may be given free throws which are worth one point each. The game typically lasts for four-quarters and the team with the most points at the end of the four-quarters win the game. If the score is tied at the end of the game, there will be something called overtime, which is additional play time to allow one team to win the match.</p>
+
+
+<div class="row">
+  <div class="column">
+    <img src="basketball2.jpg"   style="width:100%">
+  </div>
+
+
+ 
+  <div class="column">
+    <img src="basketball1.jpg"   style="width:100%">
+  </div>
+  
+</div>
+
+
+
+  
+
+
+ 
+
+<button onclick="window.print()">Print this image</button><br><br><br><br>
+
+<p>
+When a team makes a basket, they score two points and the ball goes to the other team.
+
+If a basket, or field goal, is made outside of the three-point arc, then that basket is worth three points. A free throw is worth one point.
+
+Free throws are awarded to a team according to some formats involving the number of fouls committed in a half and/or the type of foul committed.
+
+Fouling a shooter always results in two or three free throws being awarded the shooter, depending upon where he was when he shot. If he was beyond the three-point line, then he gets three shots.<p>
+
+
+
+<video width="620" height="540" controls>
+  <source src="basket.mp4" type="video/mp4">
+  <source src="basket.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+ <picture>
+  <source media="(min-width: 600px)" srcset="basketball3.jpg">
+  <source media="(min-width: 400px)" srcset="basketball3.jpg">
+  <img src="basketball3.jpg"  style="width:auto;margin-left:0 ">
+</picture>
+
+<button onclick="window.print()">Print this image</button>
+
+
+ <div class="pagination">
+  <a href="  form.html   "                >&laquo;</a>
+  <a href="    news.html      "          >1</a>
+  <a href="      football.html "                >2</a>
+  <a href="    basket.html  "            class="active"     >3</a>
+  <a href="   tennis.html      "             >4</a>
+  <a href="   swimming.html  "         >5</a>
+
+  <a href="  squash.html       "            >&raquo;</a>
+</div>
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+ 
+
+<script>
+ 
+var mybutton = document.getElementById("myBtn");
+
+ 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
